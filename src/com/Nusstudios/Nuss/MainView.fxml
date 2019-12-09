@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="407.0" prefWidth="525.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Nusstudios.Nuss.MainController">
+   <children>
+      <Label layoutX="16.0" layoutY="11.0" text="Nuss 3.1.2">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf_url" layoutX="209.0" layoutY="27.0" prefHeight="27.0" prefWidth="235.0" />
+      <Label layoutX="213.0" layoutY="10.0" text="Paste/type your URL" />
+      <Button fx:id="btn_paste" layoutX="452.0" layoutY="27.0" mnemonicParsing="false" onMouseClicked="#btn_paste" prefHeight="27.0" prefWidth="55.0" text="Paste" />
+      <Button fx:id="btn_select_output" disable="true" layoutX="155.0" layoutY="74.0" mnemonicParsing="false" onMouseClicked="#btn_select_output_doselect" prefHeight="26.0" prefWidth="30.0" text="..." />
+      <TextField fx:id="tf_output" disable="true" layoutX="16.0" layoutY="74.0" prefHeight="27.0" prefWidth="129.0" />
+      <Button fx:id="btn_dl" disable="true" layoutX="13.0" layoutY="265.0" mnemonicParsing="false" onMouseClicked="#btn_dl_dodl" prefHeight="27.0" prefWidth="175.0" text="Download" />
+      <Button fx:id="btn_bckp" disable="true" layoutX="13.0" layoutY="298.0" mnemonicParsing="false" onMouseClicked="#btn_bckp_dobckp" prefHeight="27.0" prefWidth="175.0" text="Backup" />
+      <ComboBox fx:id="cbb_streams" disable="true" layoutX="210.0" layoutY="74.0" onHidden="#cbb_streams_selected" prefHeight="27.0" prefWidth="298.0" />
+      <TextField fx:id="tf_quality" disable="true" layoutX="208.0" layoutY="196.0" prefHeight="27.0" prefWidth="95.0">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </TextField>
+      <Label layoutX="208.0" layoutY="179.0" text="Quality" />
+      <Label layoutX="209.0" layoutY="350.0" text="Bps" />
+      <TextField fx:id="tf_bps" disable="true" layoutX="209.0" layoutY="367.0" prefHeight="27.0" prefWidth="95.0">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="tf_bpsc" disable="true" layoutX="415.0" layoutY="311.0" prefHeight="27.0" prefWidth="95.0">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </TextField>
+      <Label layoutX="415.0" layoutY="294.0" text="Bps converted" />
+      <TextField fx:id="tf_vc" disable="true" layoutX="414.0" layoutY="196.0" prefHeight="27.0" prefWidth="95.0">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </TextField>
+      <Label layoutX="414.0" layoutY="179.0" text="Video codec" />
+      <TextField fx:id="tf_ac" disable="true" layoutX="209.0" layoutY="252.0" prefHeight="27.0" prefWidth="95.0">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </TextField>
+      <Label layoutX="209.0" layoutY="235.0" text="Audio codec" />
+      <TextField fx:id="tf_fps" disable="true" layoutX="313.0" layoutY="252.0" prefHeight="27.0" prefWidth="95.0">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </TextField>
+      <Label layoutX="311.0" layoutY="235.0" text="Fps" />
+      <TextField fx:id="tf_sizec" disable="true" layoutX="209.0" layoutY="311.0" prefHeight="27.0" prefWidth="95.0">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </TextField>
+      <Label layoutX="414.0" layoutY="235.0" text="Size converted" />
+      <Label layoutX="209.0" layoutY="294.0" text="Byte size" />
+      <TextField fx:id="tf_size" disable="true" layoutX="415.0" layoutY="252.0" prefHeight="27.0" prefWidth="95.0">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="tf_cntnr" disable="true" layoutX="311.0" layoutY="311.0" prefHeight="27.0" prefWidth="95.0">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </TextField>
+      <Label layoutX="310.0" layoutY="294.0" text="Container" />
+      <Label layoutX="312.0" layoutY="179.0" text="Media type" />
+      <TextField fx:id="tf_mt" disable="true" layoutX="313.0" layoutY="196.0" prefHeight="27.0" prefWidth="95.0" />
+      <CheckBox fx:id="chkb_usecookie" layoutX="13.0" layoutY="201.0" mnemonicParsing="false" onMouseClicked="#chkb_usecookie_chng" text="Use cookie" />
+      <TextField fx:id="tf_cookie" disable="true" layoutX="13.0" layoutY="224.0" prefHeight="27.0" prefWidth="175.0" />
+      <Label fx:id="lbl_info" alignment="CENTER" contentDisplay="CENTER" layoutX="210.0" layoutY="104.0" prefHeight="75.0" prefWidth="298.0" text="Idle" textAlignment="CENTER" wrapText="true" />
+      <Button fx:id="btn_plstbckp" disable="true" layoutX="13.0" layoutY="332.0" mnemonicParsing="false" onMouseClicked="#btn_plstbckp_dobckp" prefHeight="27.0" prefWidth="175.0" text="Backup playlist" />
+      <Button fx:id="btn_continue" disable="true" layoutX="13.0" layoutY="366.0" mnemonicParsing="false" onMouseClicked="#btn_continue_docontinue" prefHeight="27.0" prefWidth="175.0" text="Continue last session" />
+      <Label layoutX="18.0" layoutY="57.0" text="Select output" />
+      <Label layoutX="214.0" layoutY="59.0" text="Select stream below" />
+      <CheckBox fx:id="chkb_ddc" layoutX="13.0" layoutY="169.0" mnemonicParsing="false" text="Double download checking" />
+   </children>
+</Pane>

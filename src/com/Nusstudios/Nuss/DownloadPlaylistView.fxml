@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="318.0" prefWidth="334.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Nusstudios.Nuss.DownloadPlaylistController">
+   <children>
+      <ProgressBar fx:id="subprogressbar" layoutX="16.0" layoutY="150.0" prefHeight="20.0" prefWidth="301.0" progress="0.0" />
+      <ProgressBar fx:id="progressbar" layoutX="16.0" layoutY="120.0" prefHeight="20.0" prefWidth="301.0" progress="0.0" />
+      <Label fx:id="lbl_status" alignment="CENTER" contentDisplay="CENTER" layoutX="18.0" layoutY="48.0" prefHeight="63.0" prefWidth="301.0" text="Idle" textAlignment="CENTER" wrapText="true" />
+      <Button fx:id="btn_cancel" layoutX="17.0" layoutY="247.0" mnemonicParsing="false" onMouseClicked="#btn_cancel_docancel" prefHeight="27.0" prefWidth="301.0" text="Cancel" />
+      <Label layoutX="14.0" layoutY="14.0" text="Nuss 3.1.2">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <ProgressBar fx:id="subsubprogressbar" layoutX="18.0" layoutY="180.0" prefHeight="20.0" prefWidth="301.0" progress="0.0" />
+      <Button fx:id="btn_pause" layoutX="17.0" layoutY="213.0" mnemonicParsing="false" onMouseClicked="#btn_pause_dopause" prefHeight="27.0" prefWidth="301.0" text="Exit and continue on launch" />
+      <Button fx:id="btn_retry" disable="true" layoutX="17.0" layoutY="280.0" mnemonicParsing="false" onMouseClicked="#btn_retry_doretry" prefHeight="27.0" prefWidth="301.0" text="Retry" />
+   </children>
+</AnchorPane>
